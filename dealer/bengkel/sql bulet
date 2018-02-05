@@ -1,0 +1,20 @@
+select
+`svh1`.`nomor_pkb` AS `nomor_pkb`,
+`svh1`.`id` AS `id1`,
+`svh1`.`noka` AS `noka1`,
+`svh1`.`tanggal_pkb` AS `tanggal_pkb1`,
+`svh1`.`km` AS `km1`,
+`svh2`.`id` AS `id2`,
+`svh2`.`noka` AS `noka2`,
+`svh2`.`tanggal_pkb` AS `tanggal_pkb2`,
+`svh2`.`km` AS `km2`
+
+from `dealer`.`service_data_pkb_full` `svh1`
+
+left join `dealer`.`service_data_pkb_full` `svh2`
+on `svh1`.`noka` = `svh2`.`noka` and `svh1`.`tanggal_pkb` < `svh2`.`tanggal_pkb`
+
+where svh2.`id` IS NOT NULL
+
+GROUP BY `svh1`.`id`
+HAVING ( COUNT(`svh1`.`id`) > 0 )

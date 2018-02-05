@@ -1,0 +1,4 @@
+[gammu]
+port = AT
+connection = at115200
+

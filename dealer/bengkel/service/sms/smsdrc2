@@ -1,0 +1,29 @@
+[gammu]
+# isikan no port di bawah ini
+port = AT
+# isikan jenis connection di bawah ini
+connection = at115200
+
+[smsd]
+service = mysql
+logfile = /var/www/html/dealer/bengkel/service/sms/index.phplogsmsdrc2
+debuglevel = 0
+phoneid = /dev/ttyUSB0
+commtimeout = 30
+sendtimeout = 600
+send = yes
+receive = yes
+checksecurity = 0
+#PIN = 1234
+
+# -----------------------------
+# Konfigurasi koneksi ke MySQL
+# -----------------------------
+pc = localhost
+
+# isikan user untuk akses ke MySQL
+user = root
+# isikan password user untuk akses ke MySQL
+password = l13km0t0r
+# isikan nama database untuk Gammu
+database = sms
