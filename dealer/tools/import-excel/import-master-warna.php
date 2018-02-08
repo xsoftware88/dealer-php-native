@@ -19,7 +19,7 @@ $file_type  = array('xls','xlsx','csv','XLS','XLSX');
 //tukuran maximum file yang dapat diupload
 $max_size   = 100000000; // 1MB
 //~ $inputFileName = 'C:\xampp\htdocs\bengkel\upload-files\excel/PKB';
-$inputFileName = '../../temp/upload/sales/excel/STOK-UNIT';
+$inputFileName = '../../temp/upload/sales/excel/MASTER-WARNA';
 
 // Check if the form was submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -54,14 +54,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             //mulai memproses upload file
             if(move_uploaded_file($_FILES['data_upload']['tmp_name'], $inputFileName.'.xls')){//.$extensi)){
                 echo '<div id="success">Berhasil mengupload file '.$inputFileName.'.'.$extensi
-                .'<br /><a href="prosess-import-stok-unit.php">PROSES HASIL UPLOAD</a></div>';
+                .'<br /><a href="prosess-import-master-warna.php">PROSES HASIL UPLOAD</a></div>';
             } else{
                 echo '<div id="error">Proses upload eror</div>';
             }
         }
     }
 } else {
-    echo '<h1>Upload EXCEL STOK UNIT</h1>'
+    echo '<h1>Upload EXCEL MASTER WARNA</h1>'
         .'<form method="post" enctype="multipart/form-data" action="">'
         .'Silakan Pilih File Excel: <br />'
         .'<input name="data_upload" type="file"> <br /><br />'

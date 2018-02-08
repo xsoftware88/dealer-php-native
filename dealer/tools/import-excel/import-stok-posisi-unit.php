@@ -19,7 +19,7 @@ $file_type  = array('xls','xlsx','csv','XLS','XLSX');
 //tukuran maximum file yang dapat diupload
 $max_size   = 100000000; // 1MB
 //~ $inputFileName = 'C:\xampp\htdocs\bengkel\upload-files\excel/PKB';
-$inputFileName = '../../temp/upload/bengkel/excel/STOK-POSISI-UNIT';
+$inputFileName = '../../temp/upload/sales/excel/STOK-POSISI-UNIT';
 
 // Check if the form was submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){

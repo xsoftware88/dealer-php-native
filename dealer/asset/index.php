@@ -1,5 +1,5 @@
 <?php
-include "/../conf/conf.php";
+include __DIR__ . "/../conf/conf.php";
 ?>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">

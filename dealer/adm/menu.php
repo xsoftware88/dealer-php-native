@@ -1,8 +1,8 @@
 <div class="navbar">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="<?php echo $homeUrl; ?>dealer/index.php">HOME</a>
-            <a class="brand" href="<?php echo $homeUrl; ?>dealer/adm/index.php?p=adm">ADMIN</a>
+            <a class="brand" href="<?php echo homeUrl; ?>dealer/index.php">HOME</a>
+            <a class="brand" href="<?php echo homeUrl; ?>dealer/adm/index.php?p=adm">ADMIN</a>
 
             <ul class="nav navbar-nav">
                 <li class="dropdown">
@@ -12,10 +12,10 @@
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="<?php echo $homeUrl; ?>dealer/adm/unit/mdb.php">MDB</a>
+                            <a href="<?php echo homeUrl; ?>dealer/adm/unit/mdb.php">MDB</a>
                         </li>
                         <li>
-                            <a href="<?php echo $homeUrl; ?>dealer/adm/unit/stok.php">STOK</a>
+                            <a href="<?php echo homeUrl; ?>dealer/adm/unit/stok.php">STOK</a>
                         </li>
                     </ul>
                 </li>
@@ -26,22 +26,22 @@
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="<?php echo $homeUrl; ?>dealer/adm/upload/mdb.php">MDB</a>
+                            <a href="<?php echo homeUrl; ?>dealer/adm/upload/mdb.php">MDB</a>
                         </li>
                         <li>
-                            <a href="<?php echo $homeUrl; ?>dealer/adm/upload/do.php">DO</a>
+                            <a href="<?php echo homeUrl; ?>dealer/adm/upload/do.php">DO</a>
                         </li>
                         <li>
-                            <a href="<?php echo $homeUrl; ?>dealer/adm/upload/stok.php">STOK</a>
+                            <a href="<?php echo homeUrl; ?>dealer/adm/upload/stok.php">STOK</a>
                         </li>
                         <li>
-                            <a href="<?php echo $homeUrl; ?>dealer/adm/upload/posisi-unit.php">POSISI UNIT</a>
+                            <a href="<?php echo homeUrl; ?>dealer/adm/upload/posisi-unit.php">POSISI UNIT</a>
                         </li>
                         <li>
-                            <a href="<?php echo $homeUrl; ?>dealer/adm/upload/master-unit.php">MASTER UNIT</a>
+                            <a href="<?php echo homeUrl; ?>dealer/adm/upload/master-unit.php">MASTER UNIT</a>
                         </li>
                         <li>
-                            <a href="<?php echo $homeUrl; ?>dealer/adm/upload/master-warna.php">MASTER WARNA</a>
+                            <a href="<?php echo homeUrl; ?>dealer/adm/upload/master-warna.php">MASTER WARNA</a>
                         </li>
                     </ul>
                 </li>
